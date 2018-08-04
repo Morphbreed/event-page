@@ -1,0 +1,13 @@
+<template name="eventsIndex">
+    <h1>All Events</h1>
+    <ul class="list-group">
+        {{#each event in events}}
+        {{#with event}}
+        <a href="{{pathFor 'eventShow'}}" class="list-group-item">
+            <span class="badge">{{formatDate from}}</span>
+            {{name}}
+        </a>
+        {{/with}}
+        {{/each}}
+    </ul>
+</template>

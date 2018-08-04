@@ -1,0 +1,39 @@
+<template name="eventShow">
+    <div class="panel panel-default">
+        <div class="panel-heading">{{name}}</div>
+        <div class="panel-body">
+          <p>{{description}}</p>
+          <div id="googleMap" style="width: 500px; height: 300px; position: relative; background-color: rgb(229, 227, 223);">
+                
+          </div>
+        </div>
+        <table class="table">
+          <tbody>
+            <tr>
+                <td><strong>Street:</strong></td>
+                <td>{{street}}</td>
+            </tr>
+            <tr>
+                <td><strong>City:</strong></td>
+                <td>{{city}}</td>
+            </tr>
+            <tr>
+                <td><strong>Postcode:</strong></td>
+                <td>{{postcode}}</td>
+            </tr>
+            <tr>
+                <td><strong>Country:</strong></td>
+                <td>{{country}}</td>
+            </tr>
+            <tr>
+                <td><strong>From:</strong></td>
+                <td>{{formatDate from}}</td>
+            </tr>
+            <tr>
+                <td><strong>To:</strong></td>
+                <td>{{formatDate to}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+</template>

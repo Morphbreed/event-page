@@ -1,0 +1,6 @@
+<template name="eventsAdd">
+    <h1>Add Event</h1>
+    <div class="alert alert-danger events-add-form-error" role="alert">Bitte fülle alle Felder aus!</div>
+    <div class="alert alert-success events-add-form-success" role="alert">Dein Event wurde erfolgreich hinzugefügt!</div>
+    {{> quickForm collection=Events id="eventsAdd" type="insert"}}
+</template>
